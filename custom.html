@@ -1,0 +1,56 @@
+<!-- We don't need full layout in this file because this page will be parsed with Ajax. It is just enough to put here .navbar and .page-->
+
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="back link">
+        <i class="icon icon-back-blue"></i>
+        <span>Back</span>
+      </a>
+    </div>
+    <div class="center sliding">About</div>
+    <div class="right">
+      <a href="#" class="link icon-only open-panel"><i class="icon icon-bars-blue"></i></a>
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="about" class="page">
+    <div class="page-content">
+      <div class="content-block">
+        <p><a href="add_flight.html" class="button active">Add flight</a></p>
+        <p><a href="add_place.html" class="button active">Add_place</a></p>
+        <p><a href="add_restaurant.html" class="button active">Add_restaurant</a></p>
+      </div>
+      <p><a href="#" data-sortable=".sortable" class="open-sortable">Enable sortable</a></p>
+      <div class="list-block sortable">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-media"><i class="icon icon-f7"></i></div>
+                <div class="item-inner">
+                  <div class="item-title">Item 1</div>
+                  <div class="item-after">$10</div>
+                </div>
+              </div>
+              <!-- 可排序句柄  -->
+              <div class="sortable-handler"></div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-media"><i class="icon icon-f7"></i></div>
+                <div class="item-inner">
+                  <div class="item-title">Item 2</div>
+                  <div class="item-after">$20</div>
+                </div>
+              </div>
+              <div class="sortable-handler"></div>
+            </li>
+          </ul>
+      </div>
+      <a href="#" data-panel="left" class="button open-panel">Date</a>
+
+    </div>
+  </div>
+</div>
