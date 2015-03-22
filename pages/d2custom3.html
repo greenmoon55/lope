@@ -1,0 +1,76 @@
+<!-- We don't need full layout in this file because this page will be parsed with Ajax. It is just enough to put here .navbar and .page-->
+
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="back link">
+        <i class="icon icon-back-blue"></i>
+        <span>Back</span>
+      </a>
+      <div class="col-50"><a href="#" data-panel="left" class="button open-panel right" style="margin-top:300px">Days</a></div>
+    </div>
+    <div class="center sliding">自定义</div>
+    <div class="right">
+      <a href="#" class="link icon-only open-panel"><i class="icon icon-bars-blue"></i></a>
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="custom" class="page">
+    <div class="popup popup-flight">
+      <div class="content-block">
+        <p>自定义</p>
+        <p><a href="#" class="close-popup">Close popup</a></p>
+        <p>Lorem ipsum dolor ...</p>
+      </div>
+    </div>
+    <div class="page-content">
+      <!-- <div class="content-block">
+        <p class="buttons-row">
+          <a href="#" data-popup=".popup-flight" class="open-popup button">Add flight</a>
+          <a href="add_place.html" class="button">Add_place</a>
+          <a href="add_restaurant.html" class="button">Restaurant</a>
+        </p>
+      </div> -->
+      <div class="content-block">
+        <p class="buttons-row">
+          <p><a href="#" data-sortable=".sortable" class="open-sortable">随意编辑你的路线</a></p>
+        </p>
+      </div>
+      <div class="content-block">
+      <div class="list-block">
+          <ul id="itemListPanel"></ul>
+            <div>
+              <li class="swipeout" style="">
+                <div class="swipeout-content item-content">
+                  <div class="item-media"><img src="img/2.png"></div>
+                  <div class="item-inner">上海->苏州（D）</div>
+                </div>
+                <div class="swipeout-actions-right ">
+                  <a href="#" data-panel="right" class="action1 open-panel">详情</a>
+                  <a href="#" class="swipeout-delete">删除</a>
+                </div>
+              </li>
+              <p style="padding-left:40px;font-size:small">动车 耗时：30min ￥30RMB</p>
+            </div>
+            <div>
+              <li class="swipeout" style="">
+                <div class="swipeout-content item-content">
+                  <div class="item-media"><img src="img/1.png"></div>
+                  <div class="item-inner">苏州汤包馆</div>
+                </div>
+                <div class="swipeout-actions-right ">
+                  <a href="#" data-panel="right" class="action1 open-panel" onclick="javascript:getPlaceData('food');">详情</a>
+                  <a href="#" class="swipeout-delete">删除</a>
+                </div>
+              </li>
+            </div>
+          </ul>
+      </div>
+      <!-- <div class="content-block">
+        <a href="#" data-panel="left" class="button open-panel">Date</a>
+      </div> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<!-- We don't need full layout in this file because this page will be parsed with Ajax. It is just enough to put here .navbar and .page-->
+
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="back link">
+        <i class="icon icon-back-blue"></i>
+        <span>Back</span>
+      </a>
+      <div class="col-50"><a href="#" data-panel="left" class="button open-panel right" style="margin-top:300px">Days</a></div>
+    </div>
+    <div class="center sliding">自定义</div>
+    <div class="right">
+      <a href="#" class="link icon-only open-panel"><i class="icon icon-bars-blue"></i></a>
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="custom" class="page">
+    <div class="popup popup-flight">
+      <div class="content-block">
+        <p>自定义</p>
+        <p><a href="#" class="close-popup">Close popup</a></p>
+        <p>Lorem ipsum dolor ...</p>
+      </div>
+    </div>
+    <div class="page-content">
+      <!-- <div class="content-block">
+        <p class="buttons-row">
+          <a href="#" data-popup=".popup-flight" class="open-popup button">Add flight</a>
+          <a href="add_place.html" class="button">Add_place</a>
+          <a href="add_restaurant.html" class="button">Restaurant</a>
+        </p>
+      </div> -->
+      <div class="content-block">
+        <p class="buttons-row">
+          <p><a href="#" data-sortable=".sortable" class="open-sortable">随意编辑你的路线</a></p>
+        </p>
+      </div>
+      <div class="content-block">
+      <div class="list-block">
+          <ul id="itemListPanel"></ul>
+            
+          </ul>
+      </div>
+      <!-- <div class="content-block">
+        <a href="#" data-panel="left" class="button open-panel">Date</a>
+      </div> -->
+    </div>
+  </div>
+</div>

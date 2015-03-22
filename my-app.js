@@ -9,3 +9,8 @@ var mainView = myApp.addView('.view-main', {
   // Because we want to use dynamic navbar, we need to enable it for this view:
   dynamicNavbar: true
 });
+
+$$(document).on('pageInit', '.page[data-page="custom"]', function (e) {
+  // Following code will be executed for page with data-page attribute equal to "about"
+  window.onload = reloadData();
+})
