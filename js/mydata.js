@@ -1,8 +1,8 @@
 var myplacedata = {
 	"imgsrc1":"img/hangzhou.jpg",
-	"imgsrc2":"img/suzhou.png",
-	"imgsrc3":"img/jiudian.png",
-	"imgsrc4":"img/shenhu.png",
+	"imgsrc2":"img/suzhou.jpg",
+	"imgsrc3":"img/jiudian.jpg",
+	"imgsrc4":"img/shenhu.jpg",
 	"searchdata":[
 		"杭州",
 		"苏州汤包馆",
