@@ -65,7 +65,7 @@
                 </div>
                 <div class="swipeout-actions-right ">
                   <!-- <a href="#" class="action1">编辑</a> -->
-                  <a href="#" data-panel="right" class="action1 open-panel" onclick="javascript:getPlaceData('food');">详情</a>
+                  <a href="#" data-panel="right" class="action1 open-panel" onclick="javascript:getPlaceData();">详情</a>
                   <a href="#" class="swipeout-delete">删除</a>
                 </div>
               </li>
