@@ -1,12 +1,12 @@
 var myplacedata = {
 	"imgsrc1":"img/hangzhou.jpg",
 	"imgsrc2":"img/suzhou.png",
-	"imgsrc3":"img/dongjing.png",
+	"imgsrc3":"img/jiudian.png",
 	"imgsrc4":"img/shenhu.png",
 	"searchdata":[
 		"杭州",
-		"苏州",
-		"东京",
+		"苏州汤包馆",
+		"杭州大酒店",
 		"神户"
 	],
 	"discription1":"杭州是著名的旅游城市，以风景秀丽著称。与苏州并称“苏杭”，素有“上有天堂下有苏杭”的美誉。",
@@ -49,4 +49,40 @@ function reloadData() {
 		console.log($('#itemListPanel').children());
 	};
 	count=0;
+}
+
+function reloadInfo1 () {
+	//'imgsrc1'"+ ", 'description1'
+	// console.log(key1);
+	// console.log(key2);
+	document.getElementById("placeImg1").src = myplacedata['imgsrc1'];
+            
+    document.getElementById("placeDiscription").innerHTML = myplacedata['discription1'];
+}
+
+function reloadInfo2 () {
+	//'imgsrc1'"+ ", 'description1'
+	// console.log(key1);
+	// console.log(key2);
+	document.getElementById("placeImg1").src = myplacedata['imgsrc2'];
+            
+    document.getElementById("placeDiscription").innerHTML = myplacedata['discription2'];
+}
+
+function reloadInfo3 () {
+	//'imgsrc1'"+ ", 'description1'
+	// console.log(key1);
+	// console.log(key2);
+	document.getElementById("placeImg1").src = myplacedata['imgsrc3'];
+            
+    document.getElementById("placeDiscription").innerHTML = myplacedata['discription3'];
+}
+
+function reloadInfo4 () {
+	//'imgsrc1'"+ ", 'description1'
+	// console.log(key1);
+	// console.log(key2);
+	document.getElementById("placeImg1").src = myplacedata['imgsrc4'];
+            
+    document.getElementById("placeDiscription").innerHTML = myplacedata['discription4'];
 }

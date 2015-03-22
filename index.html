@@ -19,9 +19,7 @@
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript">
         $(function(){ 
-　　　　    document.getElementById("placeImg1").src = getPlaceData("imgsrc1");
-            
-            document.getElementById("placeDiscription").innerHTML = myplacedata["discription1"];
+　　　　    //reloadInfo();
 
 　　　　}); 
     </script>
@@ -37,16 +35,14 @@
     <div class="panel panel-left panel-reveal">
       <div class="content-block">
         <p><a href="pages/custom.html" class="button">Day1</a></p>
-        <p><a href="pages/d2custom2.html" class="button">Day2</a></p>
-        <p><a href="pages/d3custom1.html" class="button">Day3</a></p>
+        <p><a href="pages/custom2.html" class="button">Day2</a></p>
       </div>
     </div>
     <!-- Right panel with cover effect-->
     <div class="panel panel-right panel-cover" style="width:inherit;margin-top:40px">
       <div class="content-block">
-        <p><img src="javascript:getPlaceData();" id="placeImg1"></p><!-- image -->
+        <p><img  id="placeImg1"></p><!-- image -->
         <p id="placeDiscription"></p>
-        <p>人均15RMB</p>
       </div>
     </div>
     <!-- Views -->
@@ -93,6 +89,7 @@
     </div>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="sea-modules/seajs/seajs/2.2.3/sea.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="my-app.js"></script>
   </body>

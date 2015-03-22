@@ -1,3 +1,13 @@
+// seajs 的简单配置
+seajs.config({
+  base: "./sea-modules/",
+  alias: {
+    "ionejs": "phyxdown/ionejs/1.0.0/ionejs.js"
+  }
+})
+
+
+
 // Initialize app
 var myApp = new Framework7();
 
@@ -10,7 +20,11 @@ var mainView = myApp.addView('.view-main', {
   dynamicNavbar: true
 });
 
-$$(document).on('pageInit', '.page[data-page="custom"]', function (e) {
-  // Following code will be executed for page with data-page attribute equal to "about"
-  window.onload = reloadData();
-})
+$$(document).on('pageInit', function (e) {
+    var page = e.detail.page;
+    // Code for About page
+    if (page.name === '路线编辑') {
+        // 加载入口模块
+		seajs.use("./canvasCtrl");
+    }
+});
