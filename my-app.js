@@ -28,7 +28,8 @@ $$(document).on('pageInit', function (e) {
         // 加载入口模块
       seajs.use("./canvasCtrl");
     } else if (page.name === 'custom') {
-      $$('.sortable').on('open', function() {
+      $$('.sortable').on('open', function(event) {
+        var source = event.target || event.srcElement;
         if ($$(source).hasClass('swipeout')) {
           return false;
         }
