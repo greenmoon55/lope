@@ -19,9 +19,10 @@
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript">
         $(function(){ 
-　　　　    document.getElementById("placeImg1").src = getPlaceData();
+　　　　    document.getElementById("placeImg1").src = getPlaceData("imgsrc1");
             
             document.getElementById("placeDiscription").innerHTML = myplacedata["discription1"];
+
 　　　　}); 
     </script>
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
@@ -78,7 +79,7 @@
               <div class="content-block">
                 <p>模式选择</p>
                 <p><a href="recommend.html" class="button active">推荐路线</a></p>
-                <p><a href="custom.html" class="button active">放开，我自己来</a></p>
+                <p><a href="pages/custom1.html" class="button active">放开，我自己来</a></p>
               </div>
             </div>
           </div>
