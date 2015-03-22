@@ -1,3 +1,13 @@
+// seajs 的简单配置
+seajs.config({
+  base: "./sea-modules/",
+  alias: {
+    "ionejs": "phyxdown/ionejs/1.0.0/ionejs.js"
+  }
+})
+
+
+
 // Initialize app
 var myApp = new Framework7();
 
@@ -10,25 +20,31 @@ var mainView = myApp.addView('.view-main', {
   dynamicNavbar: true
 });
 
-$$(document).on('pageInit', '.page[data-page="custom"]', function (e) {
-  // Following code will be executed for page with data-page attribute equal to "about"
-  window.onload = reloadData();
-  $$('.sortable').on('open', function() {
-    if ($$(source).hasClass('swipeout')) {
-      return false;
+
+$$(document).on('pageInit', function (e) {
+    var page = e.detail.page;
+    // Code for About page
+    if (page.name === '路线编辑') {
+        // 加载入口模块
+      seajs.use("./canvasCtrl");
+    } else if (page.name === 'custom') {
+      $$('.sortable').on('open', function() {
+        if ($$(source).hasClass('swipeout')) {
+          return false;
+        }
+        $$(".info-between").remove();
+      });
+      $$('.sortable').on('close', function(event) {
+        var source = event.target || event.srcElement;
+        if ($$(source).hasClass('swipeout')) {
+          return false;
+        }
+        $$(".info-between").remove();
+        var html="<div class='info-between' style='padding-left:40px;font-size:small'>耗时：30min ￥30RMB 折扣xxRMB</div>";
+        var lis = $$(this).find('li');
+        for (var i = 0; i < lis.length; i++) {
+          $$(html).insertAfter(lis[i]);
+        }
+      });
     }
-    $$(".info-between").remove();
-  });
-  $$('.sortable').on('close', function(event) {
-    var source = event.target || event.srcElement;
-    if ($$(source).hasClass('swipeout')) {
-      return false;
-    }
-    $$(".info-between").remove();
-    var html="<div class='info-between' style='padding-left:40px;font-size:small'>耗时：30min ￥30RMB 折扣xxRMB</div>";
-    var lis = $$(this).find('li');
-    for (var i = 0; i < lis.length; i++) {
-      $$(html).insertAfter(lis[i]);
-    }
-  });
-})
+});
