@@ -41,7 +41,7 @@ $$(document).on('pageInit', function (e) {
           return false;
         }
         $$(".info-between").remove();
-        var html="<div class='info-between' style='padding-left:40px;font-size:small'>耗时：30min ￥30RMB 折扣xxRMB</div>";
+        var html="<div class='info-between' style='padding-left:40px;font-size:small'>￥30RMB 折扣价xxRMB 耗时30min 点击查看路线</div>";
         var lis = $$(this).find('li');
         for (var i = 0; i < lis.length; i++) {
           $$(html).insertAfter(lis[i]);
